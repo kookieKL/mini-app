@@ -1,9 +1,9 @@
-# Environment
+# Env
 .env
 .env.local
 *.local
 
-# macOS / Xcode
+# macOS
 .DS_Store
 xcuserdata/
 *.xcuserstate
@@ -16,7 +16,7 @@ build/
 *.dSYM.zip
 *.dSYM
 
-# Swift Package Manager
+# Swift 
 .swiftpm/
 .build/
 Packages/
@@ -27,7 +27,7 @@ supabase/.branches
 supabase/.temp
 supabase/seed/.cache
 
-# Node / Deno tooling
+# Node
 node_modules/
 .deno/
 
