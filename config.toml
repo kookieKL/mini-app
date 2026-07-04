@@ -1,0 +1,39 @@
+project_id = "krafiso"
+
+[api]
+enabled = true
+port = 54321
+schemas = ["public", "graphql_public"]
+extra_search_path = ["public", "extensions"]
+max_rows = 1000
+
+[db]
+port = 54322
+shadow_port = 54320
+major_version = 15
+
+[studio]
+enabled = true
+port = 54323
+
+[auth]
+enabled = true
+site_url = "krafiso://auth-callback"
+additional_redirect_urls = ["krafiso://auth-callback"]
+jwt_expiry = 3600
+enable_signup = true
+
+[auth.email]
+enable_signup = true
+enable_confirmations = false
+
+# Native Sign in with Apple uses signInWithIdToken; configure the provider in the dashboard
+# for production. Bundle ID must be listed under Client IDs.
+[auth.external.apple]
+enabled = true
+
+[functions.recommend]
+verify_jwt = true
+
+[functions.revenuecat-webhook]
+verify_jwt = false

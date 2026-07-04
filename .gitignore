@@ -1,0 +1,35 @@
+# Environment
+.env
+.env.local
+*.local
+
+# macOS / Xcode
+.DS_Store
+xcuserdata/
+*.xcuserstate
+DerivedData/
+build/
+*.xcworkspace/xcuserdata/
+*.moved-aside
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Swift Package Manager
+.swiftpm/
+.build/
+Packages/
+Package.resolved
+
+# Supabase
+supabase/.branches
+supabase/.temp
+supabase/seed/.cache
+
+# Node / Deno tooling
+node_modules/
+.deno/
+
+# Logs
+*.log

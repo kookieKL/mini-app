@@ -1,0 +1,26 @@
+{
+  // Editor-only TypeScript project for Deno-based Supabase code.
+  // It teaches Cursor's built-in (Node) TS server how to read Deno Edge
+  // Functions: explicit .ts import extensions, URL imports, and the global
+  // `Deno` object (declared in functions/deno.d.ts). Nothing here is emitted;
+  // the real runtime is Deno, configured via supabase/functions/deno.json.
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "lib": ["esnext", "dom", "dom.iterable"],
+    "types": [],
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "isolatedModules": true,
+    "verbatimModuleSyntax": false
+  },
+  "include": [
+    "functions/**/*.ts",
+    "functions/deno.d.ts",
+    "seed/**/*.ts"
+  ]
+}
